@@ -1,1 +1,1 @@
-hello C++ practice!
+hello syntax
