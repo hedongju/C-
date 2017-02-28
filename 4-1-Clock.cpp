@@ -28,7 +28,7 @@ inline void Clock::ShowTime(){
 }
 
 int main(){
-    Clock myClock;
+    Clock myClock;//编译器生成默认的构造函数，不做任何事情
     cout << "first time set and output:" << endl;
     myClock.SetTime();
     myClock.ShowTime();
