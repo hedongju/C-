@@ -10,6 +10,7 @@ using namespace std;
 
 class Clock{
     public:
+        Clock(int NewH,int NewM,int NewS);
         void SetTime(int NewH = 0,int NewM = 0,int NewS = 0);
         void ShowTime();
     private:
@@ -17,6 +18,11 @@ class Clock{
 };
 
 
+Clock::Clock(int NewH,int NewM,int NewS){
+    Hour = NewH;
+    Minute = NewM;
+    Second = NewS;
+}
 void Clock::SetTime(int NewH,int NewM,int NewS){
     Hour = NewH;
     Minute = NewM;
@@ -28,7 +34,7 @@ inline void Clock::ShowTime(){
 }
 
 int main(){
-    Clock myClock;//编译器生成默认的构造函数，不做任何事情
+    Clock myClock(0,0,0);//由于自定义了构造函数，编译器不会生成默认的构造函数；构造函数有形参，所以建立对象时必须给出初始值，不然编译报错
     cout << "first time set and output:" << endl;
     myClock.SetTime();
     myClock.ShowTime();
