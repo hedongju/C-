@@ -21,9 +21,7 @@ class Circle {
         float Area();
 };
 
-Circle::Circle(float r){
-    radius = r;
-}
+Circle::Circle(float r):radius(r){}
 
 float Circle::Perimeter(){
     return 2*PI*radius;
