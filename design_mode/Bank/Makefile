@@ -1,6 +1,6 @@
 CC=g++
 CFLAGS=-c -g -O2
-OBJS=  Main.o
+OBJS=  Main.o Drawer.o
 
 main:$(OBJS)
 	$(CC) $^ -o $@
