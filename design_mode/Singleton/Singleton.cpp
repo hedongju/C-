@@ -1,5 +1,5 @@
 /*
- * Singleton.cpp
+ * Singleton1.cpp
  * Copyright (C) 2017 hdj <hdj@hdj-System-Product-Name>
  *
  * Distributed under terms of the MIT license.
@@ -25,17 +25,17 @@ class Singleton{
 };
 
 Singleton *Singleton::m_Instance = NULL;
-
 int main(){
     Singleton *p1 = Singleton::GetInstance();
     Singleton *p2 = Singleton::GetInstance();
     if(p1 == p2){
-        cout << "ÊÇÍ¬Ò»¸ö¶ÔÏó" << endl;
+        cout << "æ˜¯åŒä¸€ä¸ªå¯¹è±¡" << endl;
     }
     else{
-        cout << "²»ÊÇÍ¬Ò»¸ö¶ÔÏó"<< endl;
+        cout << "ä¸æ˜¯åŒä¸€ä¸ªå¯¹è±¡"<< endl;
     }
-
     return 0;
 }
+
+
 
